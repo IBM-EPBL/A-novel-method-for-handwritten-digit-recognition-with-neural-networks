@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Digit Recongizer</title>
+</head>
+
+<body>
+    <div class="Parent-container">
+        <div class="header">
+            <h3 class="heading">IBM PROJECT</h3>
+            <div class="navbar">
+                <ul>
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('web')}}">Recognize</a></li>
+                    <!-- <li><a href="/templates/index.html">Home</a></li>
+                    <li><a href="/templates/web.html">Recognize</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="background-image">
+            <img src="/static/Images/kutty.jpeg" class="image">
+            <div class="text">
+                <form action="/web" method="POST" enctype="multipart/form-data">
+                    <div class="file">
+                        <label>Select a image:</label>
+                        <input id="image" type="file" name="image" accept="image/png, image/jpeg" onchange="preview()">
+                    </div>
+                    <div class="image-border">
+                        <img id="frame" class="img" src="" />
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn">Predict</button>
+                        <button type="button" class="btn" onclick="cleardata()">&nbsp Clear &nbsp</button>
+                    </div>
+                    <div>
+                        <h3>The Number is:{{num}}</h3>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </div>
+
+</body>
+
+<script>
+    function preview() {
+        document.getElementById("frame").src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    function cleardata(){
+        document.getElementById("frame").src = "";
+        document.getElementById("image").value = "";
+    }
+
+</script>
+
+</html>
