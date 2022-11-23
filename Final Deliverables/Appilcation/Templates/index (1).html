@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Digit Recongizer</title>
+</head>
+<body>
+    <div class="Parent-container">
+            <div class="header">
+                <h3 class="heading">IBM PROJECT</h3>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('web') }}">Recognize</a></li>
+                        <!-- <li><a href="/templates/index.html">Home</a></li>
+                        <li><a href="/templates/web.html">Recognize</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="background-image">
+                    <img src="/static/Images/kutty.jpeg" class="image">
+                    <div class="text">
+                        <h1 class="title">Handwritten Recognition System</h1>
+                        <p class="details">Handwritten Text Recogntion is a technology that is much in this world as of today. 
+                            This digit Recongnition system is used to recongnize the digits from mthe different sources like emails, 
+                            bank cheque, papers ,images, etc. Before proper implementation of this technology we have relied on writing texts
+                             with our hands which can result in errors. It's difficult to store and access physical data with effiency . The project
+                              presents recongnzing the handwritten digits (0to9) from the famous MNIST dataset. Here we will 
+                            be using artifical nenural networks/ convolution neural network.</p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    
+</body>
+</html>

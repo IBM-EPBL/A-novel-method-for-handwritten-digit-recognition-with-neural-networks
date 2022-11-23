@@ -1,0 +1,130 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+.parent-container {
+    width: 100%;
+    float: center;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    float: left;
+    background-color: lightslategray;
+    border-bottom: 5px solid lightgrey ;
+}
+
+.heading {
+    padding: 30px;
+    float: left;
+    color: white ;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 30px;
+    float: right;
+}
+
+li
+{
+    display: inline;  
+    padding: 20px;
+    margin: 0px 10px;   
+    color: white;   
+}
+
+li a {
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: rgb(192, 123, 197);
+}
+
+.body-container {
+    width: 100%;
+    float: center;
+
+}
+
+.background-image
+{
+    width: 100%;
+    float: left;
+}
+
+.image
+{
+    width: 100%;
+    height: 650px;
+    float: left;
+}
+.text{
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    color:white;
+
+}
+
+.title
+{
+    text-align: center;
+    padding: 10px;
+}
+
+.submit-btn
+{
+
+text-align: center;
+}
+
+.button
+{
+    margin: 20px;
+}
+
+.btn
+{
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(192, 123, 197);
+    cursor: pointer;
+}
+
+.img::after
+{
+    width: 200px;
+    height: 200px;
+}
+.image-border
+{
+    border : 3px solid rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.file
+{
+    margin:30px;
+}
+
